@@ -83,6 +83,8 @@ else
   export EDITOR='nvim'
 fi
 
+export GPG_TTY=$(tty)
+
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
