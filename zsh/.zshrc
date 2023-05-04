@@ -77,3 +77,6 @@ source ~/Projects/dotfiles/zsh/aliases
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# If CWD == /Users/cam.smith/.x86_rosetta then we are in Iterm_x86, so lets run the brew magic.
+test `pwd` = "$HOME/.x86_rosetta" && eval "$(/usr/local/bin/brew shellenv)"
