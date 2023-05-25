@@ -61,6 +61,7 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
+export AWS_PAGER="less -F"
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
@@ -80,3 +81,4 @@ source ~/Projects/dotfiles/zsh/aliases
 
 # If CWD == /Users/cam.smith/.x86_rosetta then we are in Iterm_x86, so lets run the brew magic.
 test `pwd` = "$HOME/.x86_rosetta" && eval "$(/usr/local/bin/brew shellenv)"
+
