@@ -61,7 +61,7 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-export AWS_PAGER="less -F"
+export AWS_PAGER="less -FX"
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
